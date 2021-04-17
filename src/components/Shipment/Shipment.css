@@ -1,0 +1,33 @@
+.ship-form {
+  margin: 30px 100px;
+  margin-left: 500px;
+}
+.ship-form input {
+  display: block;
+  margin-top: 30px;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.error {
+  color: red;
+}
+
+.form_design {
+  height: 40px;
+  width: 40px;
+  border-radius: 4px;
+}
+
+.submit {
+  background-color: rgb(10, 221, 20);
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  width: 10px;
+  height: 50px;
+}

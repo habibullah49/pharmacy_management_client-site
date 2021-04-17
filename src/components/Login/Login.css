@@ -1,0 +1,17 @@
+.button {
+  background-color: goldenrod;
+  width: 150px;
+  height: 40px;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.form_part {
+  margin-top: 7px;
+  margin-bottom: 10px;
+  height: 40px;
+  width: 300px;
+  box-sizing: border-box;
+}

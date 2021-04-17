@@ -1,0 +1,29 @@
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  margin-top: 40px;
+  width: 90%;
+  height: 200px;
+  margin-left: 80px;
+}
+h2 {
+  color: white;
+  font-size: 30px;
+}
+.link {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+.icon {
+  color: green;
+}
+.social-icon {
+  width: 50px;
+}
+.icon_design {
+  margin-left: 40px;
+}

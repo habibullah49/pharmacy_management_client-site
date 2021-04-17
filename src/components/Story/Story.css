@@ -1,0 +1,18 @@
+.story {
+  display: flex;
+}
+
+.story_img_design {
+  width: 500px;
+  height: 400px;
+  border-radius: 5px;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.paragraph_design {
+  font-size: 20px;
+  margin-top: 150px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
