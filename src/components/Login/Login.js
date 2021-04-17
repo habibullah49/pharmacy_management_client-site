@@ -41,13 +41,23 @@ function Login() {
         email:email,
         photo:photoURL
       }
-      setUser(signedInUser);
-      console.log(displayName,photoURL,email);
+      setUserToken();
+      return signedInUser;
+      
     })
     .catch(err=>{
       console.log(err);
       console.log(err.message);
     })
+  }
+
+  const setUserToken=()=>{
+    firebase.auth().currentUser.getIdToken(true).then(function(idToken) {
+      sessionStorage.setItem('token',idToken);
+     
+    }).catch(function(error) {
+      
+    });
   }
   const handleSignOut=()=>{
     firebase.auth().signOut()
@@ -145,7 +155,9 @@ function Login() {
       }).catch(function(error) {
         console.log("error");
       });
+
   }
+  
   return (
     <div style={{textAlign:'center'}}>
 

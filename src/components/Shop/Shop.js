@@ -10,12 +10,13 @@ import './Shop.css'
 const Shop = () => {
  const[products,setProducts]=useState([]);
  const[cart,setCart]=useState([]);
+ const [search, setSearch] = useState('');
 
  useEffect(()=>{
-   fetch('http://localhost:4000/products')
+   fetch('http://localhost:4000/products?search='+search)
    .then(res=>res.json())
    .then(data=>setProducts(data))
- }, [])
+ }, [search])
 
 
  useEffect(()=>{
@@ -32,6 +33,11 @@ const Shop = () => {
         .then(data => setCart(data))
  
 }, [])
+const handleSearch = event =>{
+  setSearch(event.target.value);
+}
+
+
 
  const handleAddProduct = (product) =>{
   const toBeAddedKey = product.key;
@@ -55,7 +61,9 @@ const Shop = () => {
   return (
     <div>
     <div className="twin-container">
-      <div className="product-container">       
+      <div className="product-container">
+      <input className="search" type="text" onBlur={handleSearch}  placeholder="Search Medichine "/> 
+
           {
             products.map(pd=><Product 
               key={pd.key}
