@@ -183,10 +183,7 @@ function Login() {
       </form>
 
 
-      {
-        user.isSignedIn ?  <button onClick={handleSignOut} className="button">Sign out</button> :
-        <button onClick={handleSignIn} className="button">Sign in with google</button>  
-      }
+    
       <p style={{color:'red'}}>{user.error}</p>
      {
        user.success &&  <p style={{color:'green'}}>user {newUser ? 'created' :'logged In' } successfully</p>

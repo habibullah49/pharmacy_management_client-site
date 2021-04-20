@@ -10,7 +10,7 @@ const Header = () => {
     <div >
      <div  className="container_sec">
        <div>
-        <p className="hedder style">Welcome to online store</p>
+        <h2 className="hedder">Welcome to online store</h2>
        </div>
        <div>
          <h2 className="hedder"> Need Help?01793192906</h2>

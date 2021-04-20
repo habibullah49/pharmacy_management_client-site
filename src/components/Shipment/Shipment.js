@@ -7,7 +7,7 @@ import ProcessPayment from "../ProcessPayment/ProcessPayment";
 import './Shipment.css'
 
 const Shipment = () => {
-  const { register, handleSubmit, watch, errors } =useForm();
+  const { register, handleSubmit, errors } =useForm();
   const [loggedInUser,setLoggedInUser]=useContext(userContext);
   const [shippingData, setShippingData] = useState(null);
   const onSubmit = data => {

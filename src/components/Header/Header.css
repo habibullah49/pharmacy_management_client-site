@@ -5,10 +5,7 @@
   background-color: tomato;
   height: 60px;
 }
-.style {
-  font-style: italic;
-  font-weight: 700;
-}
+
 .hedder {
   font-size: 20px;
   color: white;
@@ -38,8 +35,8 @@ nav a:hover {
   color: white;
   border: none;
   font-size: 18px;
+  position: absolute;
 }
 nav button:hover {
   background-color: gray;
-  padding: 10px;
 }

@@ -19,9 +19,7 @@ const SimpleCartForm=  ({handlePayment}) => {
       return;
     }
 
-   
     const cardElement = elements.getElement(CardElement);
-
    
     const {error, paymentMethod} = await stripe.createPaymentMethod({
       type: 'card',
